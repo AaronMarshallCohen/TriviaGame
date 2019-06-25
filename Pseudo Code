@@ -1,0 +1,20 @@
+Display game title heading
+
+Make start button to begin game
+
+Display question 1
+
+Make clickable buttons of four possible answers for each question.
+
+Display Timer with a countdown from 30 seconds to 0
+
+If the user clicks on the correct answer, display "Correct! The answer is: " plus the correct answer and display correct answer picture.
+
+Else if the user clicks on any of the other answers, display "Nope! The correct answer is: " plus the correct answer and display correct answer picture.
+
+If the timer gets to zero before the user clicks on a button, display "Out of Time! The correct answer is: " plus the correct answer and display picture.
+
+Wait 3 seconds and then go to the next question.
+
+After the final question, display the total of correct answers, total of incorrect answers, and a button to restart the game.
+
