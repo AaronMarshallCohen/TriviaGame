@@ -17,15 +17,8 @@
 
 
 // Create a variable to hold the questions. Create an array for each question with four possible answers. Make a variable for the correct answer using its index in the array. Include an image for the correct answer.
-
-
-
 var correctAnswer;
 var answerImage;
-
-
-
-
 var questions = [
     { 
         question: "Which album did the Radioactive Chicken Heads release on Friday the 13th of October, 2017?",
@@ -34,39 +27,21 @@ var questions = [
         answerImage: "assets/images/TalesFromTheCoop.jpg"
     },
     {
-      question: "Which of celebrity judge gonged the Radioactive Chicken Heads on the Gong Show?",
+        question: "Which of celebrity judge gonged the Radioactive Chicken Heads on the Gong Show?",
         answers : ["Will Arnett", "Jennifer Aniston", "Jack Black", "Zach Galifianakis"],
         correctAnswer: "Jack Black",
         answerImage: "assets/images/JackBlack.jpg"
     }
   ];
-
-
-
-$("#question").html("Question 1"); 
-for (var i = 0; i < questions.length; i++) {
-    //display question
-$("#question").html(questions);
+function start(){
+for (var i = 0; i < questions.length; i++) { 
+  $("#question1").text(questions[i].question); //display question
+    for (var j = 0; i<questions[i].answers.length; i++){
+      $("#answer1").text(questions[j].answers)
+    } 
+  }
 }
-
-var answers = [answers1, answers2];
-var answers1;
-var answers2;
-var correctAnswer1;
-var correctAnswer2;
-
-var correctAnswer = [correctAnswer1, correctAnswer2];
-var question1 = "Which album did the Radioactive Chicken Heads release on Friday the 13the of October, 2017?";
-var question2 = "Which celebrity gonged the Radioactive Chicken Heads on the Gong Show?";
-
-
-
-
-
-
-
-
-
+start(); 
 
 
 // function countDown {
